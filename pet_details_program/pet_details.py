@@ -16,3 +16,12 @@ class Pet:
         except ValueError:
             print("Warning: Age must be a number.")
             self.__age = 0
+
+    def get_name(self):
+        return self.__name
+
+    def get_animal_type(self):
+        return self.__animal_type
+
+    def get_age(self):
+        return self.__age
