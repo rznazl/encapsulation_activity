@@ -25,4 +25,15 @@ if __name__ == "__main__":
     my_car = Car("2024", "Porsche")
 
     print(f"Testing the Car Class for a {my_car.get_year_model()} {my_car.get_make()}:\n")
-    
+
+    print("Accelerating...")
+    for i in range(5):
+        my_car.accelerate()
+        print(f"Call {i + 1}: Current speed is {my_car.get_speed()}")
+
+    print("\n" + "-"*40 + "\n")
+
+    print("Braking....")
+    for i in range (5):
+        my_car.brake()
+        print(f"Call {i + 1}: Current Speed is {my_car.get_speed()}")
