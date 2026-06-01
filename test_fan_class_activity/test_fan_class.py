@@ -38,3 +38,10 @@ class Fan:
     def display_info(self):
         state = "ON" if self.__on else "OFF"
         print(f"Speed: {self.__speed} | Radius: {self.__radius} | Color: {self.__color} | State: {state}")
+
+if __name__ == "__main__":
+    first_fan = Fan()
+    first_fan.set_speed(Fan.FAST_MODE)
+    first_fan.set_radius(10.0)
+    first_fan.set_color("Yellow")
+    first_fan.set_on(True)
