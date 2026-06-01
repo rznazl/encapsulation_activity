@@ -45,3 +45,9 @@ if __name__ == "__main__":
     first_fan.set_radius(10.0)
     first_fan.set_color("Yellow")
     first_fan.set_on(True)
+
+    second_fan = Fan()
+    second_fan.set_speed(Fan.MEDIUM_MODE)
+    second_fan.set_radius(5.0)
+    second_fan.set_color("Blue")
+    second_fan.set_on(False)
