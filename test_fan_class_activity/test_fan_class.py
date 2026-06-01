@@ -19,3 +19,22 @@ class Fan:
 
     def get_color(self):
         return self.__color
+
+    def set_speed(self, speed):
+        if speed in[Fan.SLOW_MODE, Fan.MEDIUM_MODE, Fan.FAST_MODE]:
+            self.__speed = speed
+        else:
+            raise ValueError("Invalid speed value")
+
+    def set_on(self, on):
+        self.__on = bool(on)
+
+    def set_radius(self, radius):
+        self.__radius = float(radius)
+
+    def set_color(self, color):
+        set.__color = str(color)
+
+    def display_info(self):
+        state = "ON" if self.__on else "OFF"
+        print(f"Speed: {self.__speed} | Radius: {self.__radius} | Color: {self.__color} | State: {state}")
