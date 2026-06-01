@@ -33,7 +33,7 @@ class Fan:
         self.__radius = float(radius)
 
     def set_color(self, color):
-        set.__color = str(color)
+        self.__color = str(color)
 
     def display_info(self):
         state = "ON" if self.__on else "OFF"
