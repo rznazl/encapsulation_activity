@@ -3,3 +3,16 @@ class Pet:
         self.__name = ""
         self.__animal_type = ""
         self.__age = 0
+
+    def set_name(self, name):
+        self.__name = str(name)
+
+    def set_animal_type(self, animal_type):
+        self.__animal_type = str(animal_type)
+
+    def set_age(self, age):
+        try:
+            self.__age = int(age)
+        except ValueError:
+            print("Warning: Age must be a number.")
+            self.__age = 0
