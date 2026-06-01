@@ -21,4 +21,8 @@ class Car:
     def get_make(self):
         return self.__make
 
+if __name__ == "__main__":
+    my_car = Car("2024", "Porsche")
+
+    print(f"Testing the Car Class for a {my_car.get_year_model()} {my_car.get_make()}:\n")
     
