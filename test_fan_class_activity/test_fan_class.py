@@ -51,3 +51,9 @@ if __name__ == "__main__":
     second_fan.set_radius(5.0)
     second_fan.set_color("Blue")
     second_fan.set_on(False)
+
+    print("First Fan Properties: ")
+    first_fan.display_info()
+
+    print("\nSecond Fan Properties: ")
+    second_fan.display_info()
